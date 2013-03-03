@@ -2,10 +2,10 @@
 
 # 30 0 * * * steve /home/steve/address/check.sh
 
-EMAIL=you@yourdomain.com
+EMAIL=swalker@walkertek.com
 DIR=`pwd`
 
-if [ -f $DIR/address.txt ]; then
+if [ -f $DIR/.address.txt ]; then
 	mv $DIR/.address.txt $DIR/.address.txt.old
 else 
 	touch $DIR/.address.txt.old
